@@ -1,0 +1,142 @@
+/* General body styling */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Darker background */
+    font-family: ui-sans-serif;
+    flex-direction: column;
+    color: #e0e0e0; /* Light text color */
+    position: relative;
+}
+
+/* Header text */
+.centered h1 {
+    font-size: 48px;
+    background: linear-gradient(90deg, rgb(255, 115, 115), #6746ae);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 2rem; /* More space below the header */
+}
+
+/* Wrapper for the search bar */
+.wrapper {
+    position: fixed;
+    bottom: 60px; /* Adjusted the bottom position */
+    width: 100%;
+    max-width: 30rem; /* Increased max-width */
+    margin: 0 auto;
+    display: flex; /* Make the wrapper a flex container */
+    align-items: center; /* Align items vertically centered */
+}
+
+/* Search bar and label */
+.label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.75rem;
+    color: #e0e0e0;
+}
+
+.searchBar {
+    flex-grow: 1; /* Allow the search bar to take available space */
+    display: flex; /* Flex display for search input */
+    background-color: #1f1f1f;
+    border-radius: 50px; /* Smooth round edges */
+    padding: 6px 12px; /* Added padding */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Input box */
+#searchQueryInput {
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 1.2rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+
+
+/* Output message styling */
+.output-text {
+    width: 90%;
+    max-width: 750px; /* Increased for larger viewports */
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #1e1e1f;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    max-height: 60vh;
+    display: none; /* Hide by default */
+}
+
+/* User and bot message containers */
+.user-message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    justify-content: flex-end; /* Aligns user message to the right */
+}
+
+.bot-message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    justify-content: flex-start; /* Aligns bot message to the left */
+}
+
+/* Profile photo styling */
+.user-photo, .bot-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px; /* More space between photo and message */
+}
+
+.user-photo {
+    background: url('user-profile.jpg') no-repeat center/cover; /* Update with actual image path */
+}
+
+.bot-photo {
+    background: url('pic.png') no-repeat center/cover; /* Update with actual image path */
+}
+
+/* Message bubble styling */
+.message-content {
+    display: flex;
+    overflow-y: auto;
+    background-color: #7b4ae4;
+    padding: 12px 16px;
+    border-radius: 20px; /* Smoother edges */
+    max-width: 80%;
+    font-size: 1rem;
+    flex-direction: column-reverse;
+}
+
+.bot-message .message-content {
+    background-color: rgb(255, 114, 114);
+}
+
+
+
+/* Footer fixed at the bottom */
+footer {
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.875rem;
+    color: #bbbbbb;
+}
